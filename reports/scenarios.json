@@ -1,0 +1,692 @@
+{
+  "A": {
+    "decision": "64597275a2d44208a69e3e568d8c4562",
+    "verified": true,
+    "provenance": {
+      "record": {
+        "author": "0xD73DBc2eB816D0c650de075C19cf968245846c04",
+        "body": {
+          "actor": "clinic-1",
+          "case": "ab79ad221c83451fac9e6c3bbae0ec34",
+          "experiment": "scenario99ed0f5987bc46729d1a0959a8becc14",
+          "explanation_hash": "21079a34488e99534bd3827fcbce900a8a90be31863eca57636b17a1091af5ae",
+          "hash": "2ae41ee5579b9c2d8fba34bdce2eb81ac125ff48effa120c47208c8ebeeceb69",
+          "id": "64597275a2d44208a69e3e568d8c4562",
+          "key": "case:ab79ad221c83451fac9e6c3bbae0ec34",
+          "kind": "decision",
+          "model": "scenario99ed0f5987bc46729d1a0959a8becc14:r2:model",
+          "probability": 0.5575823024190413,
+          "round": 2,
+          "schema": 1,
+          "timestamp": "2026-10-28T09:10:53.239099+00:00",
+          "validation": "educational_simulation"
+        },
+        "signature": "70e816145a9e755e66d4cc554175354e83093abda6b7432635f2cb7877a5b5b14eaab6eec77ea206702fd40ab29649e50251b4772f3d242dc8441508e0dcba0d1b",
+        "receipt": {
+          "id": "d2415b7089b968bd760224d1a3d54a7ea8a5193c11973369373790a1b6b90d85",
+          "sequence": 10,
+          "confirmed": true,
+          "adapter": "local-simulator"
+        }
+      },
+      "children": [
+        {
+          "record": {
+            "author": "0x122aD4BeC8478D060808d89426bc3960DD959DBE",
+            "body": {
+              "accepted": [
+                "scenario99ed0f5987bc46729d1a0959a8becc14:r2:clinic-1",
+                "scenario99ed0f5987bc46729d1a0959a8becc14:r2:clinic-2"
+              ],
+              "actor": "server",
+              "configuration": {
+                "threshold": 3.0,
+                "weighting": "declared_training_samples"
+              },
+              "experiment": "scenario99ed0f5987bc46729d1a0959a8becc14",
+              "hash": "2ae41ee5579b9c2d8fba34bdce2eb81ac125ff48effa120c47208c8ebeeceb69",
+              "id": "scenario99ed0f5987bc46729d1a0959a8becc14:r2:model",
+              "key": "scenario99ed0f5987bc46729d1a0959a8becc14:model",
+              "kind": "model",
+              "metrics": {
+                "test": {
+                  "accuracy": 0.8708333333333333,
+                  "log_loss": 0.5993130803108215
+                },
+                "validation": {
+                  "accuracy": 0.9041666666666667,
+                  "log_loss": 0.597776472568512
+                }
+              },
+              "parent": "scenario99ed0f5987bc46729d1a0959a8becc14:r1:model",
+              "rejected": {
+                "scenario99ed0f5987bc46729d1a0959a8becc14:r2:clinic-3": "distance 4.917544 > seuil 0.149094"
+              },
+              "round": 2,
+              "schema": 1,
+              "strategy": "robust",
+              "timestamp": "2026-10-28T09:10:52.608965+00:00"
+            },
+            "signature": "c2160d9e28a1571b5ae000da9454d776b88f364ebb82031dab21e727cf39ca980ad9b3c7b9c488b860c47e48e726f9405fe198c4e577541eb846dc08cfa9619c1c",
+            "receipt": {
+              "id": "7157a943aa9fa9370723c4018c8b834559c3ad8297236f49122faf43ac09e031",
+              "sequence": 9,
+              "confirmed": true,
+              "adapter": "local-simulator"
+            }
+          },
+          "children": [
+            {
+              "record": {
+                "author": "0x122aD4BeC8478D060808d89426bc3960DD959DBE",
+                "body": {
+                  "accepted": [
+                    "scenario99ed0f5987bc46729d1a0959a8becc14:r1:clinic-1",
+                    "scenario99ed0f5987bc46729d1a0959a8becc14:r1:clinic-2"
+                  ],
+                  "actor": "server",
+                  "configuration": {
+                    "threshold": 3.0,
+                    "weighting": "declared_training_samples"
+                  },
+                  "experiment": "scenario99ed0f5987bc46729d1a0959a8becc14",
+                  "hash": "df4c0ee37cac654aca5780f6bb579032bd9dd32753a07925858cd3526f51ca91",
+                  "id": "scenario99ed0f5987bc46729d1a0959a8becc14:r1:model",
+                  "key": "scenario99ed0f5987bc46729d1a0959a8becc14:model",
+                  "kind": "model",
+                  "metrics": {
+                    "test": {
+                      "accuracy": 0.875,
+                      "log_loss": 0.6413831114768982
+                    },
+                    "validation": {
+                      "accuracy": 0.9,
+                      "log_loss": 0.6404216885566711
+                    }
+                  },
+                  "parent": "scenario99ed0f5987bc46729d1a0959a8becc14:r0:model",
+                  "rejected": {
+                    "scenario99ed0f5987bc46729d1a0959a8becc14:r1:clinic-3": "distance 5.444528 > seuil 0.161267"
+                  },
+                  "round": 1,
+                  "schema": 1,
+                  "strategy": "robust",
+                  "timestamp": "2026-10-28T09:08:43.477358+00:00"
+                },
+                "signature": "2a1820b9d2609d492ed91757382a27c026300bfd55adb5a85fd9d7a8938e2dc40515244479cee91e9baeaef580fefff0b6c6f511c48ce48453ce135e712937e01c",
+                "receipt": {
+                  "id": "7f1d05d854b3df83c3efe96d50e2618e6937fa5f95ea3c2be9f4f13cc2b7b4bf",
+                  "sequence": 5,
+                  "confirmed": true,
+                  "adapter": "local-simulator"
+                }
+              },
+              "children": [
+                {
+                  "record": {
+                    "author": "0x122aD4BeC8478D060808d89426bc3960DD959DBE",
+                    "body": {
+                      "accepted": [],
+                      "actor": "server",
+                      "configuration": {},
+                      "experiment": "scenario99ed0f5987bc46729d1a0959a8becc14",
+                      "hash": "53c3712e0420a9459e44226e1d4a828311c565dc444fdc78342a5e281dbb6444",
+                      "id": "scenario99ed0f5987bc46729d1a0959a8becc14:r0:model",
+                      "key": "scenario99ed0f5987bc46729d1a0959a8becc14:model",
+                      "kind": "model",
+                      "metrics": {},
+                      "parent": null,
+                      "rejected": {},
+                      "round": 0,
+                      "schema": 1,
+                      "strategy": "initial",
+                      "timestamp": "2026-10-28T09:07:19.304943+00:00"
+                    },
+                    "signature": "4440d7ef62fbde7bac52a325c358f4c86e1222d784f1c4e5ccf5dc802305ca2e1a92f1baedf0a33ba3905f7f45b342a01d9728d810fbd779f84e79215d72eb251c",
+                    "receipt": {
+                      "id": "ae1448b170b4c1344c6863b195a8a962d377b5d7dea34be101cd18eb2c2eaf1e",
+                      "sequence": 1,
+                      "confirmed": true,
+                      "adapter": "local-simulator"
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "record": {
+                    "author": "0xD73DBc2eB816D0c650de075C19cf968245846c04",
+                    "body": {
+                      "actor": "clinic-1",
+                      "experiment": "scenario99ed0f5987bc46729d1a0959a8becc14",
+                      "hash": "aa187988b0eabc81b8bd168c7c36dfa194c98a4eb5d811f9cc9ef9583ed30062",
+                      "id": "scenario99ed0f5987bc46729d1a0959a8becc14:r1:clinic-1",
+                      "key": "scenario99ed0f5987bc46729d1a0959a8becc14:clinic-1",
+                      "kind": "contribution",
+                      "metrics": {
+                        "test_accuracy": 0.9,
+                        "validation_accuracy": 0.7368421052631579
+                      },
+                      "parent": "scenario99ed0f5987bc46729d1a0959a8becc14:r0:model",
+                      "privacy": {
+                        "differential_privacy": false,
+                        "secure_aggregation": false
+                      },
+                      "round": 1,
+                      "samples": 57,
+                      "schema": 1,
+                      "timestamp": "2026-10-28T09:08:37.159716+00:00",
+                      "training": {
+                        "dataset_seed": 42,
+                        "dimensions": 6,
+                        "epochs": 3,
+                        "lr": 0.15,
+                        "non_iid": true,
+                        "partition": "60/20/20",
+                        "seed": 43
+                      }
+                    },
+                    "signature": "9578199d82e17a36a1f2633350a3dcdacc792d0e2cf8195c4f5a2e8139a11169460bbdd773d7ce308eb4ff861424c88c87b6c4378e0b050fe6cdf881742c47411c",
+                    "receipt": {
+                      "id": "d3856bc65d04eb26cc3cfccd97aad92b19cceb15b171ae8133fd420af37c90d0",
+                      "sequence": 2,
+                      "confirmed": true,
+                      "adapter": "local-simulator"
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "record": {
+                    "author": "0x0237c91afa7a2335343854127AA0644e8B8a4CfC",
+                    "body": {
+                      "actor": "clinic-2",
+                      "experiment": "scenario99ed0f5987bc46729d1a0959a8becc14",
+                      "hash": "2d848f5ee50f806023f3792097a31e74a216ea72101e97086f70ae9d70dfb1ef",
+                      "id": "scenario99ed0f5987bc46729d1a0959a8becc14:r1:clinic-2",
+                      "key": "scenario99ed0f5987bc46729d1a0959a8becc14:clinic-2",
+                      "kind": "contribution",
+                      "metrics": {
+                        "test_accuracy": 0.8846153846153846,
+                        "validation_accuracy": 0.8846153846153846
+                      },
+                      "parent": "scenario99ed0f5987bc46729d1a0959a8becc14:r0:model",
+                      "privacy": {
+                        "differential_privacy": false,
+                        "secure_aggregation": false
+                      },
+                      "round": 1,
+                      "samples": 76,
+                      "schema": 1,
+                      "timestamp": "2026-10-28T09:08:34.293475+00:00",
+                      "training": {
+                        "dataset_seed": 1042,
+                        "dimensions": 6,
+                        "epochs": 3,
+                        "lr": 0.15,
+                        "non_iid": true,
+                        "partition": "60/20/20",
+                        "seed": 1043
+                      }
+                    },
+                    "signature": "764dfcf85dbf7fa22673091c7e376276d991861c6ca20497b5e1fd61b78b4f123f9c53586e0e85a75f0fe7df0e61acc2cdc451c70225d8c7137ff4f6181d93171c",
+                    "receipt": {
+                      "id": "2dc3a42a33e36075b27fd8a8683a7935dfdf06f9b4aaa3d925f3e069aebec9f8",
+                      "sequence": 3,
+                      "confirmed": true,
+                      "adapter": "local-simulator"
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "record": {
+                    "author": "0xA6eB2Fb01643c640067A37C03A44C8Fd0db4e404",
+                    "body": {
+                      "actor": "clinic-3",
+                      "experiment": "scenario99ed0f5987bc46729d1a0959a8becc14",
+                      "hash": "feb38360a888d8fa4f787bfaeb31504c246f781688591a40cc0f69f0fc3ba157",
+                      "id": "scenario99ed0f5987bc46729d1a0959a8becc14:r1:clinic-3",
+                      "key": "scenario99ed0f5987bc46729d1a0959a8becc14:clinic-3",
+                      "kind": "contribution",
+                      "metrics": {
+                        "test_accuracy": 0.84375,
+                        "validation_accuracy": 0.5625
+                      },
+                      "parent": "scenario99ed0f5987bc46729d1a0959a8becc14:r0:model",
+                      "privacy": {
+                        "differential_privacy": false,
+                        "secure_aggregation": false
+                      },
+                      "round": 1,
+                      "samples": 96,
+                      "schema": 1,
+                      "timestamp": "2026-10-28T09:08:36.669595+00:00",
+                      "training": {
+                        "dataset_seed": 2042,
+                        "dimensions": 6,
+                        "epochs": 3,
+                        "lr": 0.15,
+                        "non_iid": true,
+                        "partition": "60/20/20",
+                        "seed": 2043
+                      }
+                    },
+                    "signature": "089430cb04b3efdef0e5491b00a1338204e89ad80e731b6beb1e41d71e1209204c50be006962b483db25b85d95e58305e9f6109a919ae087515dd22e3da7d5341c",
+                    "receipt": {
+                      "id": "06003351d14c271f70ddf18fd2609f5d38338666a40385ea04108fca339dd2c2",
+                      "sequence": 4,
+                      "confirmed": true,
+                      "adapter": "local-simulator"
+                    }
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "record": {
+                "author": "0xD73DBc2eB816D0c650de075C19cf968245846c04",
+                "body": {
+                  "actor": "clinic-1",
+                  "experiment": "scenario99ed0f5987bc46729d1a0959a8becc14",
+                  "hash": "ef2c25b5dd6e5f621d52c7221ae7a0d236e5c38ea663b76fef166234b53bf97c",
+                  "id": "scenario99ed0f5987bc46729d1a0959a8becc14:r2:clinic-1",
+                  "key": "scenario99ed0f5987bc46729d1a0959a8becc14:clinic-1",
+                  "kind": "contribution",
+                  "metrics": {
+                    "test_accuracy": 0.9,
+                    "validation_accuracy": 0.8421052631578947
+                  },
+                  "parent": "scenario99ed0f5987bc46729d1a0959a8becc14:r1:model",
+                  "privacy": {
+                    "differential_privacy": false,
+                    "secure_aggregation": false
+                  },
+                  "round": 2,
+                  "samples": 57,
+                  "schema": 1,
+                  "timestamp": "2026-10-28T09:10:48.532317+00:00",
+                  "training": {
+                    "dataset_seed": 42,
+                    "dimensions": 6,
+                    "epochs": 3,
+                    "lr": 0.15,
+                    "non_iid": true,
+                    "partition": "60/20/20",
+                    "seed": 44
+                  }
+                },
+                "signature": "33f5d16824f3c9d9c21fd6d4f8548f0fb7e4b4d789077c38b9ae2a80db15fd0f7aa6514cb7aefc1aee26fea0606a31cb07ce549e05226f004407dca53e8548e41b",
+                "receipt": {
+                  "id": "351bed48eff983efd22ef17d660128b8db71a679a9a69a783d491be894a2d305",
+                  "sequence": 6,
+                  "confirmed": true,
+                  "adapter": "local-simulator"
+                }
+              },
+              "children": []
+            },
+            {
+              "record": {
+                "author": "0x0237c91afa7a2335343854127AA0644e8B8a4CfC",
+                "body": {
+                  "actor": "clinic-2",
+                  "experiment": "scenario99ed0f5987bc46729d1a0959a8becc14",
+                  "hash": "fa5fab950bbdf27217252cd22671364e64a2bfa89ef8553e355fc38186a9584a",
+                  "id": "scenario99ed0f5987bc46729d1a0959a8becc14:r2:clinic-2",
+                  "key": "scenario99ed0f5987bc46729d1a0959a8becc14:clinic-2",
+                  "kind": "contribution",
+                  "metrics": {
+                    "test_accuracy": 0.9230769230769231,
+                    "validation_accuracy": 0.9615384615384616
+                  },
+                  "parent": "scenario99ed0f5987bc46729d1a0959a8becc14:r1:model",
+                  "privacy": {
+                    "differential_privacy": false,
+                    "secure_aggregation": false
+                  },
+                  "round": 2,
+                  "samples": 76,
+                  "schema": 1,
+                  "timestamp": "2026-10-28T09:10:44.756774+00:00",
+                  "training": {
+                    "dataset_seed": 1042,
+                    "dimensions": 6,
+                    "epochs": 3,
+                    "lr": 0.15,
+                    "non_iid": true,
+                    "partition": "60/20/20",
+                    "seed": 1044
+                  }
+                },
+                "signature": "2a778511854f2d97ab2c582f491688eaee6ebdfeed21d148b96cdd01c752577d097ee0cec44ef76a739753896195bb4c87221d0a220b994098200f6a1cc01e141b",
+                "receipt": {
+                  "id": "4be352cc286b2df22017a6b89eed2a055889ccca2b536b66c1e182d7506cfc86",
+                  "sequence": 7,
+                  "confirmed": true,
+                  "adapter": "local-simulator"
+                }
+              },
+              "children": []
+            },
+            {
+              "record": {
+                "author": "0xA6eB2Fb01643c640067A37C03A44C8Fd0db4e404",
+                "body": {
+                  "actor": "clinic-3",
+                  "experiment": "scenario99ed0f5987bc46729d1a0959a8becc14",
+                  "hash": "e41449ae7c78fb0e8f846e8efd2bc368b400cea237556da3bf75841a3b5124b2",
+                  "id": "scenario99ed0f5987bc46729d1a0959a8becc14:r2:clinic-3",
+                  "key": "scenario99ed0f5987bc46729d1a0959a8becc14:clinic-3",
+                  "kind": "contribution",
+                  "metrics": {
+                    "test_accuracy": 0.84375,
+                    "validation_accuracy": 0.71875
+                  },
+                  "parent": "scenario99ed0f5987bc46729d1a0959a8becc14:r1:model",
+                  "privacy": {
+                    "differential_privacy": false,
+                    "secure_aggregation": false
+                  },
+                  "round": 2,
+                  "samples": 96,
+                  "schema": 1,
+                  "timestamp": "2026-10-28T09:10:40.127958+00:00",
+                  "training": {
+                    "dataset_seed": 2042,
+                    "dimensions": 6,
+                    "epochs": 3,
+                    "lr": 0.15,
+                    "non_iid": true,
+                    "partition": "60/20/20",
+                    "seed": 2044
+                  }
+                },
+                "signature": "93496682218710374c6d63589910ea08636789200dad65d0318201e24f21bac7236b20bee3d85f4751fef317dd09d29b72e42a2427930d271026f816abaf26d51b",
+                "receipt": {
+                  "id": "aca5e46450045b77e0bad0ed0fc978f57d19bd1a03ce3354642f0003fe42cd17",
+                  "sequence": 8,
+                  "confirmed": true,
+                  "adapter": "local-simulator"
+                }
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "B": {
+    "state": "tampered",
+    "valid": false,
+    "actual_hash": "9c9257b3bb994992520fec5828a434acc70c4d9424ecd990530ba422007df74a",
+    "anchored_hash": "34a1dc349d7e93bdcc34a684225e97de5652abdb941c7482fd23d4be8ac4015e"
+  },
+  "C": {
+    "refused": true,
+    "reason": "uncertified_model"
+  },
+  "D": {
+    "same_update_hashes": [
+      "aa187988b0eabc81b8bd168c7c36dfa194c98a4eb5d811f9cc9ef9583ed30062",
+      "2d848f5ee50f806023f3792097a31e74a216ea72101e97086f70ae9d70dfb1ef",
+      "feb38360a888d8fa4f787bfaeb31504c246f781688591a40cc0f69f0fc3ba157"
+    ],
+    "robust_rejected": {
+      "2": "distance 5.444528 > seuil 0.161267"
+    },
+    "fedavg_accepted": [
+      0,
+      1,
+      2
+    ],
+    "robust_model": "scenario99ed0f5987bc46729d1a0959a8becc14:r1:model",
+    "fedavg_model": "scenario99ed0f5987bc46729d1a0959a8becc14:r1:fedavg-replay"
+  },
+  "E": {
+    "pending_survived_restart": [
+      "outage7f0e86c865ac4e87920b8026157c5468:r1:clinic-1",
+      "outage7f0e86c865ac4e87920b8026157c5468:r1:clinic-2",
+      "outage7f0e86c865ac4e87920b8026157c5468:r1:clinic-3"
+    ],
+    "records_after_replay": 6,
+    "no_duplicates": true,
+    "provenance": {
+      "record": {
+        "author": "0x143Fcf95482917e828446f1251ECf356c6E59f6d",
+        "body": {
+          "actor": "clinic-1",
+          "case": "718dd59f7dc04f008d464a709f21e9c1",
+          "experiment": "outage7f0e86c865ac4e87920b8026157c5468",
+          "explanation_hash": "16a562412f082b5333d0ec6149fe6dde4d68afdc8b603605612a4e4c3fe3ded5",
+          "hash": "f88396ab82b713d7a44ad1ede3ec5ed2c344eae78d0ebd534a32d01f1b324ba6",
+          "id": "2c8c0446462e4f19904712bc96472f1e",
+          "key": "case:718dd59f7dc04f008d464a709f21e9c1",
+          "kind": "decision",
+          "model": "outage7f0e86c865ac4e87920b8026157c5468:r1:model",
+          "probability": 0.5013564038576644,
+          "round": 1,
+          "schema": 1,
+          "timestamp": "2026-10-28T09:13:13.023770+00:00",
+          "validation": "educational_simulation"
+        },
+        "signature": "45fba040d285c4fb1bb9c737322e03049108adc1b83fba754c1c04581c8e1426554d0dbe51e460eea71387fe25c1d62c0d4754e87433bd083acea8718e04b10d1b",
+        "receipt": {
+          "id": "e480521e0f43fa0760b533cdf6bfed399a4b644b190225488268e851e32327b1",
+          "sequence": 6,
+          "confirmed": true,
+          "adapter": "local-simulator"
+        }
+      },
+      "children": [
+        {
+          "record": {
+            "author": "0x3ad68426F5E5D5eB5c07eCBf15e1070F1a80C093",
+            "body": {
+              "accepted": [
+                "outage7f0e86c865ac4e87920b8026157c5468:r1:clinic-1",
+                "outage7f0e86c865ac4e87920b8026157c5468:r1:clinic-2",
+                "outage7f0e86c865ac4e87920b8026157c5468:r1:clinic-3"
+              ],
+              "actor": "server",
+              "configuration": {
+                "threshold": 3.0,
+                "weighting": "declared_training_samples"
+              },
+              "experiment": "outage7f0e86c865ac4e87920b8026157c5468",
+              "hash": "f88396ab82b713d7a44ad1ede3ec5ed2c344eae78d0ebd534a32d01f1b324ba6",
+              "id": "outage7f0e86c865ac4e87920b8026157c5468:r1:model",
+              "key": "outage7f0e86c865ac4e87920b8026157c5468:model",
+              "kind": "model",
+              "metrics": {
+                "test": {
+                  "accuracy": 0.8666666666666667,
+                  "log_loss": 0.6543605327606201
+                },
+                "validation": {
+                  "accuracy": 0.8916666666666667,
+                  "log_loss": 0.6554784178733826
+                }
+              },
+              "parent": "outage7f0e86c865ac4e87920b8026157c5468:r0:model",
+              "rejected": {},
+              "round": 1,
+              "schema": 1,
+              "strategy": "robust",
+              "timestamp": "2026-10-28T09:13:11.824005+00:00"
+            },
+            "signature": "13fc43ad7b65e206bb1c4b041425c707d5dac6da4d7d05a72e85f9bac79763c546ea8a2e0fa7ccf8d090e23c7d5930c78ffdd66a653de32ff75df8cdaa31ac3d1c",
+            "receipt": {
+              "id": "c26fbffc81abe63257ec81e693ccc78b020ca10a04b33ac8191d5186b4dc88e1",
+              "sequence": 5,
+              "confirmed": true,
+              "adapter": "local-simulator"
+            }
+          },
+          "children": [
+            {
+              "record": {
+                "author": "0x3ad68426F5E5D5eB5c07eCBf15e1070F1a80C093",
+                "body": {
+                  "accepted": [],
+                  "actor": "server",
+                  "configuration": {},
+                  "experiment": "outage7f0e86c865ac4e87920b8026157c5468",
+                  "hash": "53c3712e0420a9459e44226e1d4a828311c565dc444fdc78342a5e281dbb6444",
+                  "id": "outage7f0e86c865ac4e87920b8026157c5468:r0:model",
+                  "key": "outage7f0e86c865ac4e87920b8026157c5468:model",
+                  "kind": "model",
+                  "metrics": {},
+                  "parent": null,
+                  "rejected": {},
+                  "round": 0,
+                  "schema": 1,
+                  "strategy": "initial",
+                  "timestamp": "2026-10-28T09:10:55.924116+00:00"
+                },
+                "signature": "6e47a4469c23b657714d2d1a1c5a783f6765044b60541579864699051ffc5a154e91301567218525d1ae3265bf4a575a941001ba7ea86883cb524c95a623f47b1c",
+                "receipt": {
+                  "id": "b95dc2c7ee97612c35d2b691d3ddbe549200dbb31a3cf8388b203e90f6d75aec",
+                  "sequence": 1,
+                  "confirmed": true,
+                  "adapter": "local-simulator"
+                }
+              },
+              "children": []
+            },
+            {
+              "record": {
+                "author": "0x143Fcf95482917e828446f1251ECf356c6E59f6d",
+                "body": {
+                  "actor": "clinic-1",
+                  "experiment": "outage7f0e86c865ac4e87920b8026157c5468",
+                  "hash": "f31934cfd55d78b4e09844ba0320f741a50d20aaaaf7b230d4909eefbfebf180",
+                  "id": "outage7f0e86c865ac4e87920b8026157c5468:r1:clinic-1",
+                  "key": "outage7f0e86c865ac4e87920b8026157c5468:clinic-1",
+                  "kind": "contribution",
+                  "metrics": {
+                    "test_accuracy": 0.9,
+                    "validation_accuracy": 0.7368421052631579
+                  },
+                  "parent": "outage7f0e86c865ac4e87920b8026157c5468:r0:model",
+                  "privacy": {
+                    "differential_privacy": false,
+                    "secure_aggregation": false
+                  },
+                  "round": 1,
+                  "samples": 57,
+                  "schema": 1,
+                  "timestamp": "2026-10-28T09:12:39.545798+00:00",
+                  "training": {
+                    "dataset_seed": 42,
+                    "dimensions": 6,
+                    "epochs": 2,
+                    "lr": 0.15,
+                    "non_iid": true,
+                    "partition": "60/20/20",
+                    "seed": 43
+                  }
+                },
+                "signature": "334e98f0df6a29086d1a344b634e8e13daaf09cabcb57fe741bdc7999412775c609c462f0375e7a4f6a7bdaf1edf79d41af4d1cee81f7f669d8c7051e03e5f071b",
+                "receipt": {
+                  "id": "f9f221d954ef4cd994fb0fb5acb2cedf4a25e43ecdbd4bb1703212ed862d4d1b",
+                  "sequence": 2,
+                  "confirmed": true,
+                  "adapter": "local-simulator"
+                }
+              },
+              "children": []
+            },
+            {
+              "record": {
+                "author": "0x9C013238373f6AF7Beb0e5942Da2Ff53AD2F13D0",
+                "body": {
+                  "actor": "clinic-2",
+                  "experiment": "outage7f0e86c865ac4e87920b8026157c5468",
+                  "hash": "e7cdaa63d5fb52793027e4850317d2ba32e306270dc0198166f8be3fe99739cc",
+                  "id": "outage7f0e86c865ac4e87920b8026157c5468:r1:clinic-2",
+                  "key": "outage7f0e86c865ac4e87920b8026157c5468:clinic-2",
+                  "kind": "contribution",
+                  "metrics": {
+                    "test_accuracy": 0.8846153846153846,
+                    "validation_accuracy": 0.8846153846153846
+                  },
+                  "parent": "outage7f0e86c865ac4e87920b8026157c5468:r0:model",
+                  "privacy": {
+                    "differential_privacy": false,
+                    "secure_aggregation": false
+                  },
+                  "round": 1,
+                  "samples": 76,
+                  "schema": 1,
+                  "timestamp": "2026-10-28T09:12:47.388980+00:00",
+                  "training": {
+                    "dataset_seed": 1042,
+                    "dimensions": 6,
+                    "epochs": 2,
+                    "lr": 0.15,
+                    "non_iid": true,
+                    "partition": "60/20/20",
+                    "seed": 1043
+                  }
+                },
+                "signature": "aa8e0ba51a5700b1cbc9d5cc6b981a63854863abc3945dfe5768dd849dc2bcf3406bd483eb296a0b60b4ff1339079a473705a08c781740dac1410589d638c5de1c",
+                "receipt": {
+                  "id": "49c78e59fc7275a1f67c43610e5a6404fe649660485acd48c825a247a3faf0cd",
+                  "sequence": 3,
+                  "confirmed": true,
+                  "adapter": "local-simulator"
+                }
+              },
+              "children": []
+            },
+            {
+              "record": {
+                "author": "0xA477ab6897a8e7C61076CE208A895CFb9B6C49Ca",
+                "body": {
+                  "actor": "clinic-3",
+                  "experiment": "outage7f0e86c865ac4e87920b8026157c5468",
+                  "hash": "64fe724954530bc4e819fa5eeec64d4c96be4d0f3d39bd76ddaae12710a32805",
+                  "id": "outage7f0e86c865ac4e87920b8026157c5468:r1:clinic-3",
+                  "key": "outage7f0e86c865ac4e87920b8026157c5468:clinic-3",
+                  "kind": "contribution",
+                  "metrics": {
+                    "test_accuracy": 0.84375,
+                    "validation_accuracy": 0.5625
+                  },
+                  "parent": "outage7f0e86c865ac4e87920b8026157c5468:r0:model",
+                  "privacy": {
+                    "differential_privacy": false,
+                    "secure_aggregation": false
+                  },
+                  "round": 1,
+                  "samples": 96,
+                  "schema": 1,
+                  "timestamp": "2026-10-28T09:12:51.310811+00:00",
+                  "training": {
+                    "dataset_seed": 2042,
+                    "dimensions": 6,
+                    "epochs": 2,
+                    "lr": 0.15,
+                    "non_iid": true,
+                    "partition": "60/20/20",
+                    "seed": 2043
+                  }
+                },
+                "signature": "4f8d00571e0456fbe96766f7d5af32cb8948fb6a8458cca46cebae4e4142959d62c3b4ab0c6fddb9ed064ffe32468db19face4b34d71fa30c5723e90a51da8f41c",
+                "receipt": {
+                  "id": "2b7880adf99b19bd978870aa10788d868ce90d187f3c7fcefa62e38613022b9a",
+                  "sequence": 4,
+                  "confirmed": true,
+                  "adapter": "local-simulator"
+                }
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

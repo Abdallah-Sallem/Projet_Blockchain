@@ -1,0 +1,8 @@
+# Example only. Each validator needs its own generated key, data path and P2P ports.
+network-id=1337
+rpc-http-enabled=true
+rpc-http-host="127.0.0.1"
+rpc-http-port=8545
+rpc-http-api=["ETH","NET","WEB3"]
+host-allowlist=["localhost","127.0.0.1"]
+min-gas-price=0

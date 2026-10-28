@@ -1,0 +1,101 @@
+{
+  "adapter": "evm-dev-chain",
+  "chain_id": 1337,
+  "contract": "0x79044C607938E016fe20BeAB7BAfcd3fC527C6E3",
+  "record_count": 10,
+  "verified_decision": "04e20ebcc4ab4d0c960b928e53fcd389",
+  "complete_model_history": 3,
+  "contract_verify_decision": true,
+  "receipts": [
+    {
+      "record": "evm1d4b73be58d44f618df200412908a052:r0:model",
+      "kind": "model",
+      "id": "ff100c7c5fcaf5c2b3ccdf10b6a1161641f43be73874efdd5e0480ddaa93818b",
+      "block": 20,
+      "confirmed": true,
+      "adapter": "evm-dev-chain",
+      "gas_used": 695547
+    },
+    {
+      "record": "evm1d4b73be58d44f618df200412908a052:r1:clinic-1",
+      "kind": "contribution",
+      "id": "8709cb5721f274af41bdc98c06dac29525394b28a37f7962becca3d500062f42",
+      "block": 22,
+      "confirmed": true,
+      "adapter": "evm-dev-chain",
+      "gas_used": 864777
+    },
+    {
+      "record": "evm1d4b73be58d44f618df200412908a052:r1:clinic-2",
+      "kind": "contribution",
+      "id": "07678f28b70ef1045a28c5decbb1282c8fd71035bc447f498719a5bbd7bc80a6",
+      "block": 24,
+      "confirmed": true,
+      "adapter": "evm-dev-chain",
+      "gas_used": 887372
+    },
+    {
+      "record": "evm1d4b73be58d44f618df200412908a052:r1:clinic-3",
+      "kind": "contribution",
+      "id": "c5c978b5f2550f894fd2356bbffdbd3db273d6230106e2f71a089c2d8e382291",
+      "block": 26,
+      "confirmed": true,
+      "adapter": "evm-dev-chain",
+      "gas_used": 864717
+    },
+    {
+      "record": "evm1d4b73be58d44f618df200412908a052:r1:model",
+      "kind": "model",
+      "id": "6d18d880743f1cfceaa2a95d70a63b0596c82806682e7c69ff70b406225319d3",
+      "block": 27,
+      "confirmed": true,
+      "adapter": "evm-dev-chain",
+      "gas_used": 1058847
+    },
+    {
+      "record": "evm1d4b73be58d44f618df200412908a052:r2:clinic-1",
+      "kind": "contribution",
+      "id": "eb8e254d70f7d681cdec3729ec795b8feea26d92416a3414712037ca8e985a3b",
+      "block": 28,
+      "confirmed": true,
+      "adapter": "evm-dev-chain",
+      "gas_used": 847689
+    },
+    {
+      "record": "evm1d4b73be58d44f618df200412908a052:r2:clinic-2",
+      "kind": "contribution",
+      "id": "561aa19f9e7bf35811e22bb503c3b3edf962e7f1f604d04e0b0a3c3faf454fa6",
+      "block": 29,
+      "confirmed": true,
+      "adapter": "evm-dev-chain",
+      "gas_used": 870272
+    },
+    {
+      "record": "evm1d4b73be58d44f618df200412908a052:r2:clinic-3",
+      "kind": "contribution",
+      "id": "7d07bd1cfd23883653d10b83835dc0357042bf174ddf15e011e727433cefdba9",
+      "block": 30,
+      "confirmed": true,
+      "adapter": "evm-dev-chain",
+      "gas_used": 847651
+    },
+    {
+      "record": "evm1d4b73be58d44f618df200412908a052:r2:model",
+      "kind": "model",
+      "id": "ad70ded1483cefd94b0d8d989c33d5b245ad1ec17d29aaaea7c1cab0e51a8a77",
+      "block": 31,
+      "confirmed": true,
+      "adapter": "evm-dev-chain",
+      "gas_used": 1058847
+    },
+    {
+      "record": "04e20ebcc4ab4d0c960b928e53fcd389",
+      "kind": "decision",
+      "id": "1ab0055cdc26e31e00361d2f1152577bbc3ae38a232c03792c69a03fa332bc85",
+      "block": 32,
+      "confirmed": true,
+      "adapter": "evm-dev-chain",
+      "gas_used": 818979
+    }
+  ]
+}

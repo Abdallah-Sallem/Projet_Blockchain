@@ -1,0 +1,1 @@
+Real EVM workflow verified: 10 records; provenance to root; native contract decision verification.

@@ -1,0 +1,8 @@
+........................                                                 [100%]
+============================= slowest 5 durations =============================
+113.00s setup    tests/test_core.py::test_nominal_provenance_and_processes
+42.87s call     tests/test_core.py::test_recover_model_staged_before_enqueue
+37.95s call     tests/test_core.py::test_outbox_durable_outage
+6.19s call     tests/test_core.py::test_api_auth_and_demo_guards
+3.50s call     tests/test_core.py::test_canonical_process_order_roundtrip
+24 passed in 218.05s (0:03:38)

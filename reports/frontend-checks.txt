@@ -1,0 +1,33 @@
+
+> fedtrace-audit@1.0.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.5 building for production...
+transforming...
+✓ 1579 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.42 kB │ gzip:  0.29 kB
+dist/assets/index-CZGQOV_v.css   10.81 kB │ gzip:  3.13 kB
+dist/assets/index-B5t8tp6j.js   209.94 kB │ gzip: 65.78 kB
+✓ built in 20.46s
+
+> fedtrace-audit@1.0.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: pending, tampered and uncertified remain distinct
+ok 1 - pending, tampered and uncertified remain distinct
+  ---
+  duration_ms: 46.5714
+  type: 'test'
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 1
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 583.5796

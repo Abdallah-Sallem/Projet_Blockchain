@@ -1,0 +1,1 @@
+{"name":"fedtrace-contracts","private":true,"type":"module","scripts":{"compile":"node compile.mjs","chain":"ganache --server.host 127.0.0.1 --chain.chainId 1337 --wallet.totalAccounts 3 --database.dbPath ../runtime/ganache --logging.quiet","test":"node --test test.mjs"},"devDependencies":{"solc":"0.8.30","ganache":"7.9.2","ethers":"6.15.0"}}

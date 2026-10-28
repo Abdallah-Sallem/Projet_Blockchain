@@ -1,0 +1,8 @@
+{
+  "confirmed_decision": "f0099cad224446528fd5c6957bfefaa4",
+  "exact_download_sha256": "2b397c1c1046777d6382e28c0bca163b31c43b2397c6e3b18201beda5b4c6a52",
+  "exact_download_matches_response": true,
+  "outage_http_status": 503,
+  "outage_reason": "ledger_unavailable",
+  "restored_ledger": "available"
+}

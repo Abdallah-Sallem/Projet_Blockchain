@@ -1,0 +1,68 @@
+[
+  {
+    "mode": "federation_only",
+    "dimensions": 6,
+    "n": 3,
+    "mean_seconds": 5.819896966666666,
+    "std_seconds": 1.0288363900657929,
+    "transactions_per_round": 0,
+    "mean_anchoring_seconds": 7.333333333174134e-07,
+    "mean_payload_bytes": 0,
+    "mean_storage_growth_bytes": 0
+  },
+  {
+    "mode": "global_only",
+    "dimensions": 6,
+    "n": 3,
+    "mean_seconds": 5.853524233333332,
+    "std_seconds": 1.0263510400820002,
+    "transactions_per_round": 1,
+    "mean_anchoring_seconds": 0.04333596666666691,
+    "mean_payload_bytes": 725.6666666666666,
+    "mean_storage_growth_bytes": 0
+  },
+  {
+    "mode": "full_certification",
+    "dimensions": 6,
+    "n": 3,
+    "mean_seconds": 5.929238733333335,
+    "std_seconds": 1.025115925695794,
+    "transactions_per_round": 4,
+    "mean_anchoring_seconds": 0.11934103333333408,
+    "mean_payload_bytes": 3606.3333333333335,
+    "mean_storage_growth_bytes": 8192
+  },
+  {
+    "mode": "federation_only",
+    "dimensions": 600,
+    "n": 3,
+    "mean_seconds": 8.4997548,
+    "std_seconds": 1.2192836691914526,
+    "transactions_per_round": 0,
+    "mean_anchoring_seconds": 6.666666661677331e-07,
+    "mean_payload_bytes": 0,
+    "mean_storage_growth_bytes": 0
+  },
+  {
+    "mode": "global_only",
+    "dimensions": 600,
+    "n": 3,
+    "mean_seconds": 8.539388633333331,
+    "std_seconds": 1.2187180716269677,
+    "transactions_per_round": 1,
+    "mean_anchoring_seconds": 0.03966603333333415,
+    "mean_payload_bytes": 725.6666666666666,
+    "mean_storage_growth_bytes": 0
+  },
+  {
+    "mode": "full_certification",
+    "dimensions": 600,
+    "n": 3,
+    "mean_seconds": 8.599144733333334,
+    "std_seconds": 1.2229107918412156,
+    "transactions_per_round": 4,
+    "mean_anchoring_seconds": 0.10026069999999739,
+    "mean_payload_bytes": 3627.3333333333335,
+    "mean_storage_growth_bytes": 8192
+  }
+]
